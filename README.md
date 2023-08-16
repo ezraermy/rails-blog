@@ -1,4 +1,4 @@
-# Blog Hub<a name="readme-top"></a>
+# Rails Blog<a name="readme-top"></a>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -24,9 +24,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Bog Hub <a name="about-project"></a>
+# 📖 Rails Blog <a name="about-project"></a>
 
-**Blog Hub** This project creates an application for bloggers, empowering individuals to share their thoughts, insights, and stories.
+**Rails Blog** This project creates an application for bloggers, empowering individuals to share their thoughts, insights, and stories.
 
 
 ## 🛠 Built With <a name="built-with"></a>
