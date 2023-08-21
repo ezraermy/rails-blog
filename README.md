@@ -66,7 +66,7 @@ In order to run this project you need to:
 Clone the repo into your local machine:
 
 ```bash
-git clone https://github.com/ezraermy/blog-hub.git
+git clone https://github.com/ezraermy/rails-blog.git
 ```
 
 Install the dependencies using npm:
