@@ -40,6 +40,8 @@ end
 
 gem 'shoulda-matchers'
 
+gem 'rails-controller-testing'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

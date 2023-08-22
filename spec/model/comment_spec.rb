@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
   describe 'associations' do
-    it { should (:author).class_name('User').with_foreign_key(:author_id) }
-    it { should belong_to(:post) }
+    it { belong_to(:author).class_name('User').with_foreign_key(:author_id) }
+    it { belong_to(:post) }
   end
 
   describe '#update_post_comments_counter' do
