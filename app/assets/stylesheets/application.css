@@ -14,7 +14,7 @@
  *= require_self
  */
 
- * {
+* {
   margin: 0;
   padding: 0;
 }
@@ -27,10 +27,10 @@ section {
 }
 
 h1 {
-    text-align: center;
-    color: #043142;
-    font-size: 2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #043142;
+  font-size: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 ul {

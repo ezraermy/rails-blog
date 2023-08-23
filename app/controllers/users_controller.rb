@@ -8,5 +8,3 @@ class UsersController < ApplicationController
     @recent_posts = @user.recent_posts
   end
 end
-
-
