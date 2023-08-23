@@ -1,1 +1,8 @@
-<h1>List of posts</h1>
+<section>
+  <%= render 'shared/user', user: @user %>
+  <ul>
+    <h1>List of posts</h1>
+    <%= render partial: 'shared/post', collection: @posts %>
+  </ul>
+  <button type="button">Pagination</button>
+</section>
