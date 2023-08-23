@@ -35,10 +35,12 @@ gem 'minitest', '~> 5.14'
 
 # Unit testing
 group :development, :test do
-  gem 'rspec-rails', '~> 5.0'
+  gem 'rspec-rails', '~> 6.0.0'
 end
 
 gem 'shoulda-matchers'
+
+gem 'rails-controller-testing'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
