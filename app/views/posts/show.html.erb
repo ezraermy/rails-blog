@@ -1,5 +1,6 @@
 <section>
     <div class="blue-box">
+        <h1>Post details</h1>
        <h2>Post #<%= @post.id %>: <%= @post.title %> by <%= @user.name %></h2>
         <%= render partial: 'shared/counters', locals: { post: @post } %>
         <p class="post-text"><%= @post.content %></p>
