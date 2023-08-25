@@ -4,6 +4,6 @@
   <p class="post-content"><%= post.content %></p>
   <%= render partial: 'shared/counters', locals: { post: post } %>
   <% if post.comments.any? %>
-    <%= render partial: 'shared/comments', locals: { post: post } %>
+    <%= render partial: 'shared/comments', locals: { post: post, show_all: false } %>
   <% end %>
 </li>
