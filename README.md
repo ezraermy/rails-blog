@@ -105,6 +105,12 @@ rails server
 - [<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" width='20'/> Twitter](https://twitter.com/ezraermy)
 - [<img src="https://i.stack.imgur.com/gVE0j.png" width='20'/> LinkedIn](https://www.linkedin.com/in/ezra-yehuwalashet/)
 
+👤 **José Rubén**
+
+- [<img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" width='20'/> Email](mailto:jrmcuervom@gmail.com)
+- [<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" width='20'/> Twitter](https://twitter.com/ruben)
+- [<img src="https://i.stack.imgur.com/gVE0j.png" width='20'/> LinkedIn](https://www.linkedin.com/in/ruben/)
+
 
 <p align="right"><a href="#readme-top">👆</a></p>
 
