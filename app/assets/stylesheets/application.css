@@ -42,6 +42,10 @@ a {
   color: #fff;
 }
 
+label {
+  color: #fff;
+}
+
 button {
   border: none;
   background-color: #043142;
