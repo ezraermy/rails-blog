@@ -27,6 +27,8 @@ gem 'stimulus-rails'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem 'jbuilder'
 
+gem 'devise'
+
 # Rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
 
