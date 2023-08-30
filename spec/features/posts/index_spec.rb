@@ -3,9 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Post', type: :feature do
   describe 'Post index page' do
     before(:each) do
-      @user = User.create(name: 'Emmanuel',
-                          photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
-                          bio: 'I am a user', postCounter: 1)
+      @user = User.create(name: 'John', email: 'john@example.com', password: 'password')
       @post = Post.create(title: 'First', content: 'First post', commentsCounter: 2, likesCounter: 1, author: @user)
       @first_comment = Comment.create(text: 'First comment', author: @user, post: @post)
       Like.create(author: @user, post: @post)
