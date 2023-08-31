@@ -29,6 +29,8 @@ gem 'jbuilder'
 
 gem 'devise'
 
+gem 'cancancan'
+
 # Rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
 

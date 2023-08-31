@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
+
   def index
     @user = User.includes(:posts).find(params[:user_id])
     @posts = @user.posts.includes(:comments)
@@ -15,22 +17,17 @@ class PostsController < ApplicationController
     @post = @user.posts.new
   end
 
-  def create
-    @user = User.find(params[:user_id])
-    @post = @user.posts.new(post_params)
-    @post.author = current_user
-    @post.commentsCounter = 0
-    @post.likesCounter = 0
-    if @post.save
-      flash[:success] = 'Post created!'
+    def destroy
+    @post = Post.find(params[:id])
+
+    if @post.destroy
+      flash[:notice] = 'Post Deleted Successfully!'
       redirect_to user_posts_path(current_user)
     else
-      flash[:error] = 'Post not created!'
-      render :new
+      flash[:alert] = @post.errors.full_messages.first if @post.errors.any?
+      render :show, status: 400
     end
   end
-
-  private
 
   def post_params
     params.require(:post).permit(:title, :content)
