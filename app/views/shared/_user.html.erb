@@ -1,7 +1,9 @@
 <li class="user">
-  <%= image_tag user.photo %>
+  <% if user.photo.present? %>
+    <%= image_tag user.photo %>
+  <% end %>
   <div class="blue-box">
     <h2><%= link_to user.name, user_path(user) %></h2>
-    <p>Number of posts: <%= if user.posts.any? then user.postCounter else 0 end %></p> 
+    <p>Number of posts: <%= user.posts.any? ? user.postCounter : 0 %></p>
   </div>
 </li>
