@@ -1,9 +1,10 @@
 class PostsController < ApplicationController
   load_and_authorize_resource
-
+  
   def index
     @user = User.includes(:posts).find(params[:user_id])
     @posts = @user.posts.includes(:comments)
+    @show_all = false
   end
 
   def show
@@ -17,7 +18,22 @@ class PostsController < ApplicationController
     @post = @user.posts.new
   end
 
-    def destroy
+  def create
+    @user = User.find(params[:user_id])
+    @post = @user.posts.new(post_params)
+    @post.author = current_user
+    @post.commentsCounter = 0
+    @post.likesCounter = 0
+    if @post.save
+      flash[:success] = 'Post created!'
+      redirect_to user_posts_path(current_user)
+    else
+      flash[:error] = 'Post not created!'
+      render :new
+    end
+  end
+
+  def destroy
     @post = Post.find(params[:id])
 
     if @post.destroy

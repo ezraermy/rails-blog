@@ -16,18 +16,21 @@ class CommentsController < ApplicationController
       flash[:alert] = 'Comment not created!'
       render :new
     end
+  end
     
-    def destroy
-      @comment = Comment.find(params[:id])
+  def destroy
+    @comment = Comment.find(params[:id])
   
-      if @comment.destroy
-        flash[:notice] = 'Comment Deleted Successfully!'
-        redirect_to user_post_path(user_id: current_user.id, id: @comment.post_id)
-      else
-        flash[:alert] = @comment.errors.full_messages.first if @comment.errors.any?
-        render :show, status: 400
-      end
+    if @comment.destroy
+      flash[:notice] = 'Comment Deleted Successfully!'
+      redirect_to user_post_path(user_id: current_user.id, id: @comment.post_id)
+    else
+      flash[:alert] = @comment.errors.full_messages.first if @comment.errors.any?
+      render :show, status: 400
     end
+  end
+
+  private
 
   def comment_params
     params.require(:comment).permit(:text)
